@@ -40,9 +40,9 @@ namespace Work.Entiety
         public double Income(int month, int year)
         {
             double sum = BaseSalary;
-            foreach(HourContract hourContract in Contracts)
+            foreach (HourContract hourContract in Contracts)
             {
-                if(hourContract.Date.Year == year && hourContract.Date.Month == month)
+                if (hourContract.Date.Year == year && hourContract.Date.Month == month)
                 {
                     sum += hourContract.TotalValue();
                 }
